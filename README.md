@@ -21,7 +21,7 @@ This is a guide to use your own servers on platforms that run Minecraft (Bedrock
 ### What platforms/versions have been reported working?
 
 - Minecraft Bedrock Edition v1.11.4 for Xbox One
-- Minecraft Bedrock Edition v1.16.1 for Nintendo Switch
+- Minecraft Bedrock Edition v1.21.20 for Nintendo Switch
 
 This guide may also work on other platforms which run Minecraft Bedrock Edition in future, and new versions of the game, however support isn't guaranteed. If it is working on platforms not listed above, please create an Issue saying as such, and I can update the list above.
 
