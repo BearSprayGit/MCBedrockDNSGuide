@@ -1,0 +1,11 @@
+.:53 {
+   hosts {
+      {$MINECRAFT_SERVER} geo.hivebedrock.network # The Hive
+      {$MINECRAFT_SERVER} mco.lbsg.net            # Lifeboat
+      {$MINECRAFT_SERVER} mco.cubecraft.net       # cubecraft
+      {$MINECRAFT_SERVER} play.inpvp.net          # mineville
+      {$MINECRAFT_SERVER} play.galaxite.net       # Galaxite
+      fallthrough
+   }
+   forward . {$COREDNS_DEFAULT_DNS}:53
+}
