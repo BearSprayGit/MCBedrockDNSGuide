@@ -21,7 +21,7 @@ This is a guide to use your own servers on platforms that run Minecraft (Bedrock
 ### What platforms/versions have been reported working?
 
 - Minecraft Bedrock Edition v1.11.4 for Xbox One
-- Minecraft Bedrock Edition v1.21.20 for Nintendo Switch
+- Minecraft Bedrock Edition v1.21.21 for Nintendo Switch
 
 This guide may also work on other platforms which run Minecraft Bedrock Edition in future, and new versions of the game, however support isn't guaranteed. If it is working on platforms not listed above, please create an Issue saying as such, and I can update the list above.
 
@@ -69,7 +69,19 @@ One, this allows for cross-platform play without one host being always online wi
 
 This guide assumes your server is already working. To test this, you can use Minecraft for Windows 10, or Minecraft on mobile devices (for those of you on Linux, check out the project MCPELauncher).
 
-### DNS Setup on the server
+### DNS Setup on Windows PC
+
+1. Download CoreDNS
+    - I've verified the script works using CoreDNS version 1.11.3 and Windows 11 version 22H2
+2. Extract it by right clicking, and clicking extract all
+3. Download Corefile.txt and startCoreDNS
+4. Place files in CoreDNS folder
+5. Run startCoreDNS
+6. You will be prompted to select a default DNS server to use, a couple options are given
+7. You will be prompted to input the domain or IP address of the minecraft server
+
+
+### DNS Setup on the server (LEGACY)
 
 > This guide assumes you're running Linux, however, I've tried to make it easier to follow along on Windows
 
