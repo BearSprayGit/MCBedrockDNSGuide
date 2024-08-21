@@ -82,6 +82,17 @@ This guide assumes your server is already working. To test this, you can use Min
 7. You will be prompted to select a default DNS server to use, a couple options are given
 8. You will be prompted to input the domain or IP address of the minecraft server
 
+Your Corefile will look a little similar to the following
+```
+.:53 {
+   hosts {
+      {$MINECRAFT_SERVER} overwritten sever
+      fallthrough
+   }
+   forward . {$COREDNS_DEFAULT_DNS}:53
+}
+```
+
 
 ### DNS Setup on the server
 
