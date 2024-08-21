@@ -74,11 +74,12 @@ This guide assumes your server is already working. To test this, you can use Min
 1. Download CoreDNS
     - I've verified the script works using CoreDNS version 1.11.3 and Windows 11 version 22H2
 2. Extract it by right clicking, and clicking extract all
-3. Download Corefile.txt and startCoreDNS
-4. Place files in CoreDNS folder
+3. Download startCoreDNS.cmd
+4. Place in CoreDNS folder
 5. Run startCoreDNS
-6. You will be prompted to select a default DNS server to use, a couple options are given
-7. You will be prompted to input the domain or IP address of the minecraft server
+6. You will be prompted to select a server to redirect traffic from
+7. You will be prompted to select a default DNS server to use, a couple options are given
+8. You will be prompted to input the domain or IP address of the minecraft server
 
 
 ### DNS Setup on the server (LEGACY)
