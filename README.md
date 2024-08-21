@@ -82,7 +82,7 @@ This guide assumes your server is already working. To test this, you can use Min
 8. You will be prompted to input the domain or IP address of the minecraft server
 
 
-### DNS Setup on the server (LEGACY)
+### DNS Setup on the server
 
 > This guide assumes you're running Linux, however, I've tried to make it easier to follow along on Windows
 
