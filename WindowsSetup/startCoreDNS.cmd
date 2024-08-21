@@ -15,8 +15,40 @@ goto Minecraft_Server_Setter
 )
 :Minecraft_Server_Completed
 
+
+:Main
+cls
+goto Main_Screen_Setup
+
+
+:StartDNS
 coredns -conf Corefile.txt -dns.port=53
+goto Main
+
+
+:Main_Screen_Setup
+echo Please select from the following options to proceed
+echo 1 - Change Minecraft Server overwritten
+echo 2 - Change Default DNS (Domain Name Server)
+echo 3 - Change desired target Minecraft server
+echo 4 - Start CoreDNS
+echo 5 - Quit
+
+set /p input=
+if %input%==1 (
+goto Corefile_Creation
+) else if %input%==2 (
+goto Default_DNS_Setter
+) else if %input%==3 (
+goto Minecraft_Server_Setter
+)else if %input%==4 (
+goto StartDNS
+) else if %input%==5 (
 goto end
+) else (
+echo Unrecognized input
+)
+goto Main
 
 
 :Corefile_Creation
@@ -69,9 +101,16 @@ goto DNS_Completed
 
 
 :Minecraft_Server_Setter
+echo Enter 1 if you do not have a registered domain name, and are selfing hosting on the same computer:
+set /p input=
+if %input%==1 (
+set MINECRAFT_SERVER=curl -4 ifconfig.me
+goto Minecraft_Server_Completed
+) else (
 echo Please enter the domain name or IP address of your server
 set /p MINECRAFT_SERVER=
 setx MINECRAFT_SERVER "%MINECRAFT_SERVER%"
+)
 goto Minecraft_Server_Completed
 
 
