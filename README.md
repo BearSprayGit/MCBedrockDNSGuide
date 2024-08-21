@@ -138,3 +138,13 @@ If you want to report specific compatibility with platforms/versions not listed,
 If you want to play using a Java server, check out [Geyser](https://github.com/GeyserMC/Geyser). It works well, and lets me play on Java servers while curled up in bed.
 
 If you want to have a server browser on Switch, check out [BedrockConnect](https://github.com/Pugmatt/BedrockConnect). It's great as it means at most you take out one of the built in servers, and lets you have many many more saved. It's also light enough to be ran on a Raspberry Pi without issues.
+
+## TODO
+
+Add main loop to startCoreDNS
+Allow users to change redirected server
+Allow users to change default DNS server
+Allow users to change minecraft server
+Add option to launch coreDNS from main loop
+Support relaunching coreDNS upon setting change
+Maybe launch coredns in a separate named window
