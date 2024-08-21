@@ -141,10 +141,10 @@ If you want to have a server browser on Switch, check out [BedrockConnect](https
 
 ## TODO
 
-Add main loop to startCoreDNS
-Allow users to change redirected server
-Allow users to change default DNS server
-Allow users to change minecraft server
-Add option to launch coreDNS from main loop
-Support relaunching coreDNS upon setting change
-Maybe launch coredns in a separate named window
+- Add main loop to startCoreDNS
+- Allow users to change redirected server
+- Allow users to change default DNS server
+- Allow users to change minecraft server
+- Add option to launch coreDNS from main loop
+- Support relaunching coreDNS upon setting change
+- Maybe launch coredns in a separate named window
