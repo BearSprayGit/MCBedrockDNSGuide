@@ -22,6 +22,16 @@ goto Main_Screen_Setup
 
 
 :StartDNS
+cls
+echo DNS is running on
+curl -4 ifconfig.me
+echo:
+if %CoreDNS_MinecraftBedrock_SelfHost%==1 (
+echo External Players will also connect to this ip
+echo LAN Players can also connect to
+echo %MINECRAFT_SERVER%
+)
+Echo Now using port
 coredns -conf Corefile.txt -dns.port=53
 goto Main
 
@@ -104,12 +114,16 @@ goto DNS_Completed
 echo Enter 1 if you do not have a registered domain name, and are selfing hosting on the same computer:
 set /p input=
 if %input%==1 (
-set MINECRAFT_SERVER=curl -4 ifconfig.me
+for /f "tokens=2 delims=[]" %%a in ('ping -n 1 -4 ""') do set "MINECRAFT_SERVER=%%a"
+set CoreDNS_MinecraftBedrock_SelfHost=1
+setx CoreDNS_MinecraftBedrock_SelfHost=1
 goto Minecraft_Server_Completed
 ) else (
 echo Please enter the domain name or IP address of your server
 set /p MINECRAFT_SERVER=
 setx MINECRAFT_SERVER "%MINECRAFT_SERVER%"
+set CoreDNS_MinecraftBedrock_SelfHost=0
+setx CoreDNS_MinecraftBedrock_SelfHost=0
 )
 goto Minecraft_Server_Completed
 
