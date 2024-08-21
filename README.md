@@ -8,6 +8,7 @@
     + [List of the domains for featured servers](#domains-list)
   * [Setup](#setup)
     + [Requirements](#requirements)
+    + [DNS Setup on Windows PC](#dns-setup-on-windows-pc)
     + [DNS Setup on the server](#dns-setup-on-the-server)
     + [DNS setup on the console](#dns-setup-on-the-console)
   * [Making Improvements](#making-improvements)
